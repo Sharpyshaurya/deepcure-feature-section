@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Rubik:wght@500&display=swap");
+.section {
+  height: max(700px, 100vh);
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 3.6em;
+  background-color: #23120b;
+}
+.sectionWrapper {
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+}
+.sectionWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(200, 8px);
+}
+.heading > p {
+  font-family: "Rubik", sans-serif;
+}
+.heading {
+  font-weight: 300;
+  color: aliceblue;
+  font-size: 2em;
+  grid-column: 4 / span 11;
+}
+.left-side {
+  grid-column: 3;
+  grid-row: 15;
+}
+.center-side {
+  grid-column: 6;
+  grid-row: 15;
+}
+.right-side {
+  grid-column: 9;
+  grid-row: 15;
+}
+.text-under {
+  color: aliceblue;
+  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
+}
